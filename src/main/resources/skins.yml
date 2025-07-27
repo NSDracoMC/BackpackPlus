@@ -1,0 +1,21 @@
+skins:
+  default:
+    display_name: "&fBa lô Mặc định"
+    material: "NETHERITE_INGOT"
+    custom_model_data: 100001
+    price: 0
+  ruby:
+    display_name: "&cBa lô Hồng Ngọc"
+    material: "NETHERITE_INGOT"
+    custom_model_data: 100002
+    price: 100
+  emerald:
+    display_name: "&aBa lô Lục Bảo"
+    material: "NETHERITE_INGOT"
+    custom_model_data: 100003
+    price: 150
+  sapphire:
+    display_name: "&9Ba lô Sapphire"
+    material: "NETHERITE_INGOT"
+    custom_model_data: 100004
+    price: 200

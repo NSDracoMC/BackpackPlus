@@ -1,0 +1,70 @@
+database:
+  host: "localhost"
+  port: 3306
+  database: "backpackplus_db"
+  username: "user_database"
+  password: "password_database"
+  maxPoolSize: 10
+  minIdle: 5
+  connectionTimeout: 30000
+  idleTimeout: 600000
+  maxLifetime: 1800000
+  properties: {useSSL: false, autoReconnect: true, cachePrepStmts: true, prepStmtCacheSize: 250, prepStmtCacheSqlLimit: 2048, useServerPrepStmts: true, useLocalSessionState: true, rewriteBatchedStatements: true, cacheResultSetMetadata: true, cacheServerConfiguration: true, elideSetAutoCommits: true, maintainTimeStats: false, allowPublicKeyRetrieval: true}
+
+backpack:
+  max_pages: 1000
+  upgrade_increment_rows: 3
+  max_upgrades: 3
+  recover_cost: 1000
+  buy_cost: 500
+  buyup_cost: 250
+  rename_cost: 10000
+  item:
+    material: "PAPER"
+    custom_model_data: 100001
+    name_format: "&d&lBalo Cá Nhân ({num_pages} trang)"
+    lore_format:
+      - "&7Chủ sở hữu: &f{owner}"
+      - "&7Số trang: &f{num_pages}"
+      - "&7Tổng số ô: &f{total_slots}"
+      - "&7Đã dùng: &e{used_slots}/{total_slots} ô"
+      - "&8ID Kỹ thuật: {backpack_db_id}"
+      - "&8Cấp nâng cấp: &a{upgrade_level}/{max_upgrades}"
+
+  blacklisted-items:
+    - "BARRIER"
+    - "COMMAND_BLOCK"
+    - "COMMAND_BLOCK_MINECART"
+    - "CHAIN_COMMAND_BLOCK"
+    - "REPEATING_COMMAND_BLOCK"
+    - "STRUCTURE_BLOCK"
+    - "STRUCTURE_VOID"
+    - "JIGSAW"
+    - "BEDROCK"
+    - "END_PORTAL_FRAME"
+    - "SPAWNER"
+    - "BUNDLE"
+
+sorting:
+  enchantment_tiers:
+    - name: "COMMON"
+      unicode: "৊"
+      priority: 1
+    - name: "RARE"
+      unicode: "ো"
+      priority: 2
+    - name: "EPIC"
+      unicode: "ৌ"
+      priority: 3
+    - name: "RELIC"
+      unicode: "♞"
+      priority: 4
+    - name: "LEGENDARY"
+      unicode: "্"
+      priority: 5
+    - name: "EXCLUSIVE"
+      unicode: "ৎ"
+      priority: 6
+    - name: "LIMITED"
+      unicode: "︼"
+      priority: 7

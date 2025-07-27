@@ -1,0 +1,118 @@
+backpack_gui:
+  size: 45
+  title_format: ":offset_-8::bp_gui:"
+  items_per_page: 27
+
+  layout:
+    '0-8':
+      type: 'control_item'
+      item_key: 'filler_pane_item'
+
+    '9-35':
+      type: 'storage'
+
+    '36':
+      type: 'control_item'
+      item_key: 'previous_page_button'
+    '37':
+      type: 'control_item'
+      item_key: 'sort_button'
+    '38-39':
+      type: 'control_item'
+      item_key: 'filler_pane_item'
+    '40':
+      type: 'control_item'
+      item_key: 'page_indicator_item'
+    '41':
+      type: 'control_item'
+      item_key: 'filler_pane_item'
+    '42':
+      type: 'control_item'
+      item_key: 'take_all_from_page'
+    '43':
+      type: 'control_item'
+      item_key: 'quick_deposit_button'
+    '44':
+      type: 'control_item'
+      item_key: 'next_page_button'
+
+
+  control_items_definition:
+    previous_page_button:
+      material: "NETHERITE_INGOT"
+      name: "&a◀ Trang Trước"
+      custom_model_data: 4001
+      action: "prev_page"
+
+    next_page_button:
+      material: "NETHERITE_INGOT"
+      name: "&aTrang Tiếp ▶"
+      custom_model_data: 4000
+      action: "next_page"
+
+    page_indicator_item:
+      material: "PAPER"
+      name: "&eTrang {current_page}/{max_pages}"
+      custom_model_data: 3
+      action: "display_only"
+
+    sort_button:
+      material: "NETHERITE_INGOT"
+      name: "&6Sắp xếp Balo"
+      lore: ["&7Nhấp để sắp xếp tất cả", "&7vật phẩm trong balo."]
+      custom_model_data: 4002
+      action: "sort"
+
+    quick_deposit_button:
+      material: "NETHERITE_INGOT"
+      name: "&bDọn đồ nhanh"
+      lore: ["&7Nhấp để chuyển nhanh các", "&7vật phẩm phù hợp từ", "&7túi đồ của bạn vào balo."]
+      custom_model_data: 4003
+      action: "quick_deposit"
+
+    filler_pane_item:
+      material: "PAPER"
+      name: " "
+      custom_model_data: 4000
+      action: "filler_pane"
+    take_all_page_button:
+      material: "ENDER_CHEST"
+      name: "&5Lấy hết đồ trong trang"
+      lore:
+        - "&7Nhấp để lấy tất cả"
+        - "&7vật phẩm trên trang hiện tại."
+      custom_model_data: 4004
+      action: "take_all_from_page"
+
+skin_shop_gui:
+  size: 36
+  title: "Shop Skin Ba Lô"
+  layout:
+    '0-8':
+      type: 'control_item'
+      item_key: 'black_filler'
+    '9-26':
+      type: 'storage' # Khu vực chứa các skin để bán
+    '27-35':
+      type: 'control_item'
+      item_key: 'black_filler'
+  control_items_definition:
+    black_filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+
+wardrobe_gui:
+  size: 54
+  title: "Tủ Skin"
+  layout:
+    '0-8':
+      type: 'control_item'
+      item_key: 'gray_filler'
+    '9-44':
+      type: 'storage' # Khu vực chứa các skin người chơi sở hữu
+    '45-53':
+      type: 'control_item'
+      item_key: 'gray_filler'
+  control_items_definition:
+    gray_filler:
+      material: "GRAY_STAINED_GLASS_PANE"
